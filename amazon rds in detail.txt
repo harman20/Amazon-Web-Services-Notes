@@ -1,0 +1,81 @@
+Welcome back, Blaine here. We're talking about databases. Now, we just covered the differences that
+you want to consider when choosing between a build-your-own-database strategy and using the Amazon Relational
+Database Service, or RDS. Again, the big advantage being that
+we will take care of all those undifferentiated heavy lifting tasks, such
+as backups or operating system management. I want to show you how easy it is
+to use RDS in your own account. I'm already logged in here, and
+all you have to do is go down to the RDS service, before you start
+launching your system. Now, you might already have your own VPC
+and your own private subnets created, I've already taken care of
+that in my account as well. When it comes time to launch an instance,
+all you have to do is say, create a database. The first question you get asked is what
+type of database do you want to launch. Odds are your DBA already
+knows the answer to this. You might be an Oracle shop, or
+you might use Microsoft SQL Server, or perhaps just a MySQL or
+a PostgreSQL database. Whichever flavor it is,
+we've got the options here, including the Amazon Aurora database, which is a MySQL-compatible engine
+that is designed to work cloud-native, meaning it's going to give you more power
+at less cost all native inside your VPC. For this demonstration, let's go ahead and
+launch a MySQL instance. Once we select the instance,
+we can go ahead and choose Next, and now it's going to ask
+us a couple questions. Whether or not we want to launch
+a production version of MySQL or just a development version. This is specifically concerned over
+the idea of a Multi-Availability Zone deployment or a Single-AZ. If I'm using a MySQL database for a developer,
+I'm not worried about high availability. In that case,
+because a Multi-AZ strategy costs more, I'd absolutely go with the Dev option. But in this case, we're going to be
+launching a production database. So by choosing the Production-MySQL, it's going to automatically
+give us that Multi-AZ option. Now that we're here inside the details, we
+can of course choose which database engine version you want, and there's a wide range
+of different MySQL versions we support. You'll see an option to choose
+a license model, but in MySQL, there is simply the general
+license that's available. For some of our other flavors, you might
+have the option to bring your own license, or the special licensing
+agreements that you need, or use the pay-as-you-go
+option that comes with AWS. Additional options will be how large of
+a database do you want to start with, and this of course can be changed. If you want to start with a small
+database and then as demand grows, change it over time, that absolutely
+is one of the benefits of RDS. Additional options we'll go ahead and
+take as default, but you can choose as we look at IOPS to
+know how much communication do you want to provision,
+what kind of storage do you want. All of these become elements that of
+course are editable over time, but give you fine granular control over what
+types of communications are available, as well as what your monthly cost will be. And there's no surprises, it'll tell you right upfront exactly
+what the cost is going to be. How much for the provisioned IOPS, how
+much for database instance and storage. We want no surprises at all as you
+provision the exact database you need for your application. Now, we now can choose some settings
+that are specific to your database. This is going to be your initial login
+settings with the master username and password it's going to be. Of course, we recommend that you
+change this once you get logged in, so there's no concerns about anyone else but
+you having the master password. This database identifier in my
+case is our corporate directory. We give it our master username, as
+well as our super secret password. By the way, don't ever save the password
+when it asks you to do that. Now, where do you want to launch it? Now we simply choose which VPC,
+which subnet group, and we're just going to go ahead and
+take the defaults out of this. Public accessibility? No, I don't want this public. This is going to be my private
+database with a front-end instance. As far as anything else,
+what security groups we want? What individual database options? These all become choices you can do
+to give you specific elements, and we'll just take the defaults as-exist. Encryption? I absolutely want encryption. So in this case, we're going to leave
+the default to Enable encryption, which is going to connect right to our own
+master key, that's part of our setups. As far as backups go, you set up
+how often you keep the backups and how long you keep the backups. In my case, I want my backups to retain
+for not just every seven days, but I like to keep backups for two weeks. So we make that change. We can of course say exactly when
+we want the backups to happen. I'm okay keeping
+the defaults there as well. Monitoring, enhanced monitoring is
+going to give me additional information. We want to go ahead and
+keep that option available. Performance insights, all these options
+as default we're going to stick with. And finally,
+log export we want to send them off to, we absolutely can go ahead and
+select those. On our maintenance contracts for AWS, we want to know if we want to
+enable minor version upgrades. Do we want to stay on this version, so
+it doesn't automatically upgrade? I'll go ahead and
+keep the current elements. In my case, because my DBA is not tied to
+a specific DB version, we'll go ahead and take each minor version as it comes. Check with your DBA to decide
+which option's best for her. And finally, Deletion protection,
+I absolutely want this one checked. I don't want someone accidentally or
+inadvertently sending a delete command and having it accepted. We've got all our pieces in place,
+let's create the database. And now, the engine takes over. At this point, we sit back, allow for
+all the pieces to come into play, and when we're done,
+AWS will have created the engine for you. In this case, a MySQL engine, but for you, it'll be whatever database
+flavor you want in your VPC. Whether it's a Single-AZ or
+a Multi-AZ strategy, it's going to be what you need, and all you
+have to worry about now is the data itself.

@@ -1,0 +1,21 @@
+Congratulations on completing,
+and thank you for taking this course, AWS Fundamentals:
+Going Cloud Native. We covered a lot of territory. We started with an introduction
+to AWS services, and then explored AWS Regions and
+infrastructure. Next, we focused on some fundamental
+AWS services in the areas of compute, networking, storage, databases,
+monitoring, and scaling. We finished up with an overview
+of security and cost management. So you may be asking,
+where do I go from here? Throughout the course, we have provided
+links to AWS documentation and resources. The best way to further your
+understanding of these services is to get hands-on experience. Please take advantage of
+the AWS Free Tier and jump in. This is the first class in an ongoing
+series of classes we are creating on Coursera. This class utilized
+server-based solutions, and our next class will focus
+on serverless solutions. Specifically, we will look at
+services, such as AWS Lambda, to create on-demand compute services without
+having to manage and maintain servers. In later classes, we will dive deeper into
+some of the topics we discussed in this class, such as security and
+database services. Please stay tuned for details. On behalf of Blaine, Morgan, and
+our lizard friend, thank you for taking our class. We hope you've learned some new things and
+enjoyed our time together. Now little one, let's go find our buddies. [MUSIC]

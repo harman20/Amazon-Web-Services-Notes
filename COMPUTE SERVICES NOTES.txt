@@ -1,0 +1,92 @@
+Building and running your application starts with compute, whether you are building enterprise, cloud-native, or mobile applications; or running massive clusters to sequence the human genome.
+
+AWS offers a comprehensive portfolio of compute services that allow you to develop, deploy, run, and scale your applications and workloads in the world’s most powerful, secure, and innovative compute cloud.
+
+Details about the full range of AWS compute services can be found here .
+
+Later in this module, you will learn about both Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Lightsail. See those sections for more details.
+
+Both serverless computing and container services are beyond the scope of this class. We will cover these topics in subsequent courses, but the following descriptions provide an introduction to some of the key services for serverless computing and containers.
+
+AWS Lambda
+AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume--there is no charge when your code isn't running. Additional information about Lambda can be found at: https://aws.amazon.com/lambda
+
+AWS Container Services
+Amazon Elastic Container Service (Amazon ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers. It allows you to run and scale containerized applications on AWS. You can find more details at: https://aws.amazon.com/ecs/
+
+Amazon Elastic Container Service for Kubernetes (Amazon EKS) makes it straightforward to deploy, manage, and scale containerized applications that use Kubernetes on AWS. Details can be found at: https://aws.amazon.com/eks/
+
+AWS Fargate is a compute engine for Amazon ECS and Amazon EKS that allows you to run containers without having to manage servers or clusters. You can find more information at: https://aws.amazon.com/fargate/
+
+Note that before you use any of these services, you should check whether they are eligible for the AWS Free Tier: https://aws.amazon.com/free
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AWS Compute services
+Category
+Use cases
+AWS service
+Virtual machines
+Secure and resizable compute capacity (virtual servers) in the cloud
+ Amazon Elastic Compute Cloud (EC2)
+Easy-to-use cloud platform that offers you everything you need to build an application or website
+ Amazon Lightsail
+Containers
+Highly secure, reliable, and scalable way to run containers
+ Amazon Elastic Container Service (ECS)
+Easily store, manage, and deploy container images
+ Amazon Elastic Container Registry (ECR)
+Fully managed Kubernetes service
+ Amazon Elastic Kubernetes Service (EKS)
+Serverless
+Run code without thinking about servers. Pay only for the compute time you consume
+ AWS Lambda
+Serverless compute for containers
+ AWS Fargate
+Edge and hybrid
+Run AWS infrastructure and services on premises for a truly consistent hybrid experience
+ AWS Outposts
+Delivery ultra-low latency application for 5G devices
+AWS-Wavelength_Icon_32_Squid AWS Wavelength
+Rapidly extend, migrate, and protect your VMware environment to the AWS cloud
+ VMware Cloud on AWS
+Run latency sensitive applications closer to end-users
+ AWS Local Zones
+Cost and capacity management
+Run fault-tolerant workload for up to 90% off
+ Amazon EC2 Spot Instances
+Automatically add or remove compute capacity to meet changes in demand
+ Amazon EC2 Autoscaling
+Fully managed batch processing at any scale
+AWS-Batch_Icon_32_Squid AWS Batch
+Recommends optimal AWS Compute resources for your workloads to reduce costs and improve performance
+AWS-Compute-Optimizer_Icon_32_Squid AWS Compute Optimizer
+Easy-to-use service for deploying and scaling web applications and services
+AWS-Elastic-Beanstalk_Icon_32_Squid AWS Elastic Beanstalk
+Build and maintain secure Linux or Windows Server images
+EC2-Image-Builder_Icon_32_Squid EC2 Image Builder
+Automatically distribute incoming application traffic across multiple targets
+Elastic-Load-Balancing_Icon_32_Squid Elastic Load Balancing (ELB)
+The AWS Nitro System
+The AWS Nitro System enables AWS to innovate faster, further reduce cost for our customers, and deliver added benefits like increased security and new instance types. AWS has completely re-imagined our virtualization infrastructure. Traditionally, hypervisors protect the physical hardware and bios, virtualize the CPU, storage, networking, and provide a rich set of management capabilities. With the Nitro System, we are able to break apart those functions, offload them to dedicated hardware and software, and reduce our costs by delivering all of the resources of a server to customers.
+
+The Nitro System is comprised of three main parts: The Nitro Cards, the Nitro Security Chip, and the Nitro Hypervisor. The Nitro Cards are a family of cards that offloads and accelerates IO for functions including VPC, EBS, and Instance Storage, ultimately increasing overall system performance. The Nitro Security Chip enables the most secure cloud platform with a minimized attack surface as virtualization and security functions are offloaded to dedicated hardware and software. Additionally, a locked down security model prohibits all administrative access, including those of Amazon employees, eliminating the possibility of human error and tampering. The Nitro Hypervisor is a lightweight hypervisor that manages memory and CPU allocation and delivers performance that is indistinguishable from bare metal.

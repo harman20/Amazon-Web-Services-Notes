@@ -1,0 +1,136 @@
+What Is Cloud Computing?
+Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing.
+
+Six Advantages and Benefits of Cloud Computing
+Trade capital expenses for variable expense
+Benefit from massive economies of scale
+Stop guessing capacity
+Increase speed and agility
+Stop spending money on running and maintaining data centers
+Go global in minutes
+Additional information is available at: https://aws.amazon.com/what-is-cloud-computing/.
+
+Deployment Models
+There is a range of deployment models, from all on-premises to fully deployed in the cloud. Many users begin with a new project in the cloud, and they might integrate some on-premises applications with these new projects in a hybrid architecture. They might decide to keep some legacy systems on-premises. Over time, they might migrate more and more of their infrastructure to the cloud, and they might eventually reach an all-in-the-cloud deployment.
+
+Details can be found at: https://aws.amazon.com/types-of-cloud-computing/.
+
+What is cloud computing?
+Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).
+
+
+Who is using cloud computing?
+Organizations of every type, size, and industry are using the cloud for a wide variety of use cases, such as data backup, disaster recovery, email, virtual desktops, software development and testing, big data analytics, and customer-facing web applications. For example, healthcare companies are using the cloud to develop more personalized treatments for patients. Financial services companies are using the cloud to power real-time fraud detection and prevention. And video game makers are using the cloud to deliver online games to millions of players around the world.
+Benefits of cloud computing
+WICC_Video-Placeholder_Agility_350-N
+Agility
+The cloud gives you easy access to a broad range of technologies so that you can innovate faster and build nearly anything that you can imagine. You can quickly spin up resources as you need them–from infrastructure services, such as compute, storage, and databases, to Internet of Things, machine learning, data lakes and analytics, and much more.
+
+You can deploy technology services in a matter of minutes, and get from idea to implementation several orders of magnitude faster than before. This gives you the freedom to experiment, test new ideas to differentiate customer experiences, and transform your business.
+Elasticity
+With cloud computing, you don’t have to over-provision resources up front to handle peak levels of business activity in the future. Instead, you provision the amount of resources that you actually need. You can scale these resources up or down to instantly to grow and shrink capacity as your business needs change.
+WICC_Video-Placeholder_Flexibility_350-N
+WICC_Video-Placeholder_CostSavings_350-N
+Cost savings
+The cloud allows you to trade capital expenses (such as data centers and physical servers) for variable expenses, and only pay for IT as you consume it. Plus, the variable expenses are much lower than what you would pay to do it yourself because of the economies of scale. 
+
+Deploy globally in minutes
+With the cloud, you can expand to new geographic regions and deploy globally in minutes. For example, AWS has infrastructure all over the world, so you can deploy your application in multiple physical locations with just a few clicks. Putting applications in closer proximity to end users reduces latency and improves their experience. 
+
+WICC_Video-Placeholder_Global_350
+Types of cloud computing
+The three main types of cloud computing include Infrastructure as a Service, Platform as a Service, and Software as a Service. Each type of cloud computing provides different levels of control, flexibility, and management so that you can select the right set of services for your needs. 
+Learn more 
+AWS-Types-of-Cloud-Computing_Infrastructure-as-a-Service-N
+Infrastructure as a Service (IaaS)
+IaaS contains the basic building blocks for cloud IT. It typically provides access to networking features, computers (virtual or on dedicated hardware), and data storage space. IaaS gives you the highest level of flexibility and management control over your IT resources. It is most similar to the existing IT resources with which many IT departments and developers are familiar. 
+
+AWS-Types-of-Cloud-Computing_Platform-as-a-Service-N
+Platform as a Service (PaaS)
+PaaS removes the need for you to manage underlying infrastructure (usually hardware and operating systems), and allows you to focus on the deployment and management of your applications. This helps you be more efficient as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching, or any of the other undifferentiated heavy lifting involved in running your application. 
+
+AWS-Types-of-Cloud-Computing_Software-as-a-Service-N
+Software as a Service (SaaS)
+SaaS provides you with a complete product that is run and managed by the service provider. In most cases, people referring to SaaS are referring to end-user applications (such as web-based email). With a SaaS offering, you don’t have to think about how the service is maintained or how the underlying infrastructure is managed. You only need to think about how you will use that particular software. 
+
+Helping customers innovate faster
+Zillow_Logo final
+Zillow Transforms Real Estate Using AWS
+Zillow helped bring the real estate industry online, then reinvented the home-search process using AWS Cloud. Using AWS, Zillow delivers accurate home data to buyers, sellers, and renters, allowing them to make informed decisions in fast-paced markets.
+Learn More 
+Growing Demand for Speed and Scale
+When Zillow created its home-valuation tool—Zestimate—nearly 15 years ago, it had to develop an on-premises machine learning framework to process an array of data. But, as its popularity and complexity grew, Zillow needed a better way to deliver Zestimates on nearly 100 million homes across the country.
+
+Faster, More Dynamic Home Valuations
+Zillow moved its Zestimate framework to AWS, giving it the speed and scale to deliver home valuations in near-real time. The more dynamic valuations better reflect both the unique features of each home and what’s happening in the local housing market, so customers have the latest data as they explore the buying or selling process.
+Reaching Customers at the Market’s Pace
+In hot housing markets, homes can go from listing to offer in just days. Zillow built AWS technologies into its infrastructure to quickly and reliably deliver hundreds of millions of emails each month, keeping customers apprised of the latest listings, home statuses, and more.
+
+Cloud services
+AWS has more services, and more features within those services, than any other cloud provider, including compute, storage, databases, networking, data lakes and analytics, machine learning and artificial intelligence, IoT, security, and much more.
+
+Learn more 
+Cloud solutions
+AWS provides a comprehensive portfolio of solutions that help you solve common problems and build faster using the AWS platform. Every AWS Solution comes with detailed architecture, a deployment guide, and instructions for both automated and manual deployment.
+Learn more 
+Learn more about cloud computing on AWS
+Pricing
+AWS offers a pay-as-you-go approach for pricing.
+Pricing for each service is unique.
+Learn more 
+Products
+AWS has over 175 fully featured services for a wide range of technologies, industries, and use cases.
+Learn more 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Products and Services
+AWS offers a broad set of global cloud-based products, including compute, storage, databases, analytics, networking, mobile, developer tools, management tools, Internet of Things (IoT), security, and enterprise applications. These services help organizations move faster, lower IT costs, and scale. AWS is trusted by the largest enterprises and the hottest start-ups to power a wide variety of workloads including: web and mobile applications, game development, data processing and warehousing, storage, archive, and many others.
+
+Details can be found at: https://aws.amazon.com/products/.
+
+AWS Partner Network (APN)
+APN Partners are focused on your success, and they help customers take full advantage of all the business benefits that AWS has to offer.
+
+More details about accessing the AWS Partner Network--or becoming an AWS Partner--can be found at: https://aws.amazon.com/partners/.
+
+AWS Marketplace
+The AWS Marketplace is a digital catalog with thousands of software listings from independent software vendors, where you can find, test, buy, and deploy software to run on AWS.
+
+These offerings can range from simple web server applications to security, networking business intelligence, databases, DevOps, and media. Many of these applications offer pay-as-you-go or Bring Your Own License (BYOL) models.
+
+Details on the AWS Marketplace can be found at: https://aws.amazon.com/marketplace.
+
+
+
+
+
+
+Cloud Computing Deployment Models
+AWS-Types-of-Cloud-Computing_Cloud
+Cloud
+A cloud-based application is fully deployed in the cloud and all parts of the application run in the cloud. Applications in the cloud have either been created in the cloud or have been migrated from an existing infrastructure to take advantage of the benefits of cloud computing. Cloud-based applications can be built on low-level infrastructure pieces or can use higher level services that provide abstraction from the management, architecting, and scaling requirements of core infrastructure.
+AWS-Types-of-Cloud-Computing_Hybrid
+Hybrid
+A hybrid deployment is a way to connect infrastructure and applications between cloud-based resources and existing resources that are not located in the cloud. The most common method of hybrid deployment is between the cloud and existing on-premises infrastructure to extend, and grow, an organization's infrastructure into the cloud while connecting cloud resources to internal system. For more information on how AWS can help you with your hybrid deployment, please visit our hybrid page.
+AWS-Types-of-Cloud-Computing_On-premises
+On-premises
+Deploying resources on-premises, using virtualization and resource management tools, is sometimes called “private cloud”. On-premises deployment does not provide many of the benefits of cloud computing but is sometimes sought for its ability to provide dedicated resources. In most cases this deployment model is the same as legacy IT infrastructure while using application management and virtualization technologies to try and increase resource utilization.
+Next Steps
+Ready to take the next step? AWS can help you learn more about AWS, find the right solution for your needs, or connect you with an AWS salesperson who can help you find the right solution for you.
+Learn more about AWS
+Amazon Web Services provides the broadest set of cloud services available around the world. To learn more about the benefits of deploying your next application with AWS, visit our what is AWS page.
+Discover AWS Solutions
+With solutions and services for IT, DevOps, and developers; AWS has a broad platform to help you accomplish your next project. To learn more about solutions and services available in the AWS cloud, visit AWS Solutions page.
+Contact a salesperson
+Ready to talk to someone from AWS? Fill out our contact us form and a trained AWS salesperson will give you a call to discuss your needs and how AWS can help you get your next project into the cloud.

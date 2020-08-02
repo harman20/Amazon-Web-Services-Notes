@@ -1,0 +1,247 @@
+Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.
+
+General Purpose
+General purpose instances provide a balance of compute, memory and networking resources, and can be used for a variety of diverse workloads. These instances are ideal for applications that use these resources in equal proportions such as web servers and code repositories. 
+
+Amazon EC2 A1 instances deliver significant cost savings and are ideally suited for scale-out and Arm-based workloads that are supported by the extensive Arm ecosystem. A1 instances are the first EC2 instances powered by AWS Graviton Processors that feature 64-bit Arm Neoverse cores and custom silicon designed by AWS.
+Features:
+
+Custom built AWS Graviton Processor with 64-bit Arm Neoverse cores
+Support for Enhanced Networking with Up to 10 Gbps of Network bandwidth
+EBS-optimized by default
+Powered by the AWS Nitro System, a combination of dedicated hardware and lightweight hypervisor
+Instance	vCPU	Mem (GiB)	Storage	Network Performance (Gbps)
+a1.medium	1	2	EBS-Only
+Up to 10
+a1.large	2	4	EBS-Only	Up to 10
+a1.xlarge	4	8	EBS-Only	Up to 10
+a1.2xlarge	8	16	EBS-Only	Up to 10
+a1.4xlarge	16	32	EBS-Only	Up to 10
+a1.metal	16*	32	EBS-Only	Up to 10
+* a1.metal provides 16 physical cores
+
+All instances have the following specs:
+
+Custom built AWS Graviton Processor with 64-bit Arm cores
+EBS Optimized
+Enhanced Networking†
+Use Cases:
+
+Scale-out workloads such as web servers, containerized microservices, caching fleets, and distributed data stores, as well as development environments
+Each vCPU is a thread of either an Intel Xeon core or an AMD EPYC core, except for M6g instances, A1 instances, T2 instances, and m3.medium.
+
+Each vCPU on M6g instances is a core of the AWS Graviton2 processor. 
+
+Each vCPU on A1 instances is a core of an AWS Graviton Processor.
+† AVX, AVX2, and Enhanced Networking are only available on instances launched with HVM AMIs.
+
+* This is the default and maximum number of vCPUs available for this instance type. You can specify a custom number of vCPUs when launching this instance type. For more details on valid vCPU counts and how to start using this feature, visit the Optimize CPUs documentation page here.
+
+** These M4 instances may launch on an Intel Xeon E5-2686 v4 (Broadwell) processor.  
+
+Compute Optimized
+Compute Optimized instances are ideal for compute bound applications that benefit from high performance processors. Instances belonging to this family are well suited for batch processing workloads, media transcoding, high performance web servers, high performance computing (HPC), scientific modeling, dedicated gaming servers and ad server engines, machine learning inference and other compute intensive applications.
+C5 instances are optimized for compute-intensive workloads and deliver cost-effective high performance at a low price per compute ratio.
+
+Features:
+
+C5 instances offer a choice of processors based on the size of the instance.
+New C5 and C5d 12xlarge, 24xlarge, and metal instance sizes feature custom 2nd generation Intel Xeon Scalable Processors (Cascade Lake) with a sustained all core Turbo frequency of 3.6GHz and single core turbo frequency of up to 3.9GHz.
+Other C5 instance sizes will launch on the 2nd generation Intel Xeon Scalable Processors (Cascade Lake) or 1st generation Intel Xeon Platinum 8000 series (Skylake-SP) processor with a sustained all core Turbo frequency of up to 3.4GHz, and single core turbo frequency of up to 3.5 GHz.
+New larger 24xlarge instance size offering 96 vCPUs, 192 GiB of memory, and optional 3.6TB local NVMe-based SSDs
+Requires HVM AMIs that include drivers for ENA and NVMe
+With C5d instances, local NVMe-based SSDs are physically connected to the host server and provide block-level storage that is coupled to the lifetime of the C5 instance
+Elastic Network Adapter (ENA) provides C5 instances with up to 25 Gbps of network bandwidth and up to 14 Gbps of dedicated bandwidth to Amazon EBS.
+Powered by the AWS Nitro System, a combination of dedicated hardware and lightweight hypervisor
+Model	vCPU	Memory (GiB)	Instance Storage (GiB)	Network Bandwidth (Gbps)
+EBS Bandwidth (Mbps)
+c5.large	2	4	EBS-Only	Up to 10	Up to 4,750
+c5.xlarge	4	8	EBS-Only	Up to 10	Up to 4,750
+c5.2xlarge	8	16	EBS-Only	Up to 10	Up to 4,750
+c5.4xlarge	16	32	EBS-Only	Up to 10	4,750
+c5.9xlarge	36	72	EBS-Only	10	9,500
+c5.12xlarge	48	96	EBS-Only	12	9,500
+c5.18xlarge	72	144	EBS-Only	25	19,000
+c5.24xlarge	96	192	EBS-Only	25	19,000
+c5.metal	96	192	EBS-Only	25	19,000
+c5d.large	2	4	1 x 50 NVMe SSD	Up to 10	Up to 4,750
+c5d.xlarge	4	8	1 x 100 NVMe SSD	Up to 10	Up to 4,750
+c5d.2xlarge	8	16	1 x 200 NVMe SSD	Up to 10	Up to 4,750
+c5d.4xlarge	16	32	1 x 400 NVMe SSD	Up to 10	4,750
+c5d.9xlarge	36	72	1 x 900 NVMe SSD	10	9,500
+c5d.12xlarge	48	96	2 x 900 NVMe SSD	12	9,500
+c5d.18xlarge	72	144	2 x 900 NVMe SSD	25	19,000
+c5d.24xlarge	96	192	4 x 900 NVMe SSD	25	19,000
+c5d.metal	96	192	4 x 900 NVMe SSD	25	19,000
+C5 and C5d 12xlarge, 24xlarge, and metal instances have the following specs:
+
+Custom 2nd generation Intel Xeon Scalable Processors (Cascade Lake) with a sustained all core Turbo frequency of 3.6GHz and single core turbo frequency of up to 3.9GHz.
+Intel AVX†, Intel AVX2†, Intel AVX-512, Intel Turbo, Intel DL Boost
+EBS Optimized
+Enhanced Networking†
+All other C5 and C5d instances have the following specs:
+
+Custom 2nd generation Intel Xeon Scalable Processors (Cascade Lake) with a sustained all core Turbo frequency of 3.6GHz and single core turbo frequency of up to 3.9GHz or 1stgeneration Intel Xeon Platinum 8000 series (Skylake-SP) processor with a sustained all core Turbo frequency of up to 3.4GHz, and single core turbo frequency of up to 3.5 GHz.
+Intel AVX†, Intel AVX2†, Intel AVX-512, Intel Turbo
+EBS Optimized
+Enhanced Networking†
+Use Cases
+
+High performance web servers, scientific modelling, batch processing, distributed analytics, high-performance computing (HPC), machine/deep learning inference, ad serving, highly scalable multiplayer gaming, and video encoding.
+Each vCPU is a thread of either an Intel Xeon core or an AMD EPYC core, except for T2 and m3.medium.
+
+† AVX, AVX2, and Enhanced Networking are only available on instances launched with HVM AMIs.
+
+* This is the default and maximum number of vCPUs available for this instance type. You can specify a custom number of vCPUs when launching this instance type. For more details on valid vCPU counts and how to start using this feature, visit the Optimize CPUs documentation page here.
+
+** These M4 instances may launch on an Intel Xeon E5-2686 v4 (Broadwell) processor.  
+
+Memory Optimized
+Memory optimized instances are designed to deliver fast performance for workloads that process large data sets in memory.
+R5 instances deliver 5% additional memory per vCPU than R4 and the largest size provides 768 GiB of memory. In addition, R5 instances deliver a 10% price per GiB improvement and a ~20% increased CPU performance over R4.
+
+Features:
+
+Up to 3.1 GHz Intel Xeon® Platinum 8175 processors with new Intel Advanced Vector Extension (AVX-512) instruction set
+Up to 768 GiB of memory per instance
+Powered by the AWS Nitro System, a combination of dedicated hardware and lightweight hypervisor
+With R5d instances, local NVMe-based SSDs are physically connected to the host server and provide block-level storage that is coupled to the lifetime of the R5 instance
+New 8xlarge and 16xlarge sizes now available.
+Instance	vCPU	Memory (GiB)	Instance Storage (GiB)	Networking Performance (Gbps)	EBS Bandwidth (Mbps)
+r5.large	2	16	EBS-Only	up to 10	Up to 4,750
+r5.xlarge	4	32	EBS-Only	up to 10	Up to 4,750
+r5.2xlarge	8	64	EBS-Only	up to 10	Up to 4,750
+r5.4xlarge	16	128	EBS-Only	up to 10	4,750
+r5.8xlarge	32	256	EBS-Only	10	6,800
+r5.12xlarge	48	384	EBS-Only	10	9,500
+r5.16xlarge	64	512	EBS Only	20	13,600
+r5.24xlarge	96	768	EBS-Only	25	19,000
+r5.metal	96*	768	EBS-Only	25	19,000
+r5d.large	2	16	1 x 75 NVMe SSD	up to 10	Up to 4,750
+r5d.xlarge	4	32	1 x 150 NVMe SSD	up to 10	Up to 4,750
+r5d.2xlarge	8	64	1 x 300 NVMe SSD	up to 10	Up to 4,750
+r5d.4xlarge	16	128	2 x 300 NVMe SSD	up to 10	4,750
+r5d.8xlarge	32	256	2 x 600 NVMe SSD	10	6,800
+r5d.12xlarge	48	384	2 x 900 NVMe SSD	10	9,500
+r5d.16xlarge	64	512	4 x 600 NVMe SSD	20	13,600
+r5d.24xlarge	96	768	4 x 900 NVMe SSD	25	19,000
+r5d.metal	96*	768	4 x 900 NVMe SSD	25	19,000
+*r5.metal and r5d.metal provide 96 logical processors on 48 physical cores; they run on single servers with two physical Intel sockets
+
+All instances have the following specs:
+
+Up to 3.1 GHz Intel Xeon Platinum Processor
+Intel AVX†, Intel AVX2†, Intel Turbo
+EBS Optimized
+Enhanced Networking†
+Use Cases
+
+R5 instances are well suited for memory intensive applications such as high performance databases, distributed web scale in-memory caches, mid-size in-memory databases, real time big data analytics, and other enterprise applications.
+Accelerated Computing
+Accelerated computing instances use hardware accelerators, or co-processors, to perform functions, such as floating point number calculations, graphics processing, or data pattern matching, more efficiently than is possible in software running on CPUs.
+P3 instances are the latest generation of general purpose GPU instances.
+
+Features:
+
+Up to 8 NVIDIA Tesla V100 GPUs, each pairing 5,120 CUDA Cores and 640 Tensor Cores
+High frequency Intel Xeon E5-2686 v4 (Broadwell) processors for p3.2xlarge, p3.8xlarge, and p3.16xlarge.
+High frequency 2.5 GHz (base) Intel Xeon P-8175M processors for p3dn.24xlarge.
+Supports NVLink for peer-to-peer GPU communication
+Provides up to 100 Gbps of aggregate network bandwidth.
+EFA support on p3dn.24xlarge instances
+Instance	GPUs	vCPU	Mem (GiB)	GPU Mem (GiB)	GPU P2P	Storage (GB)	Dedicated EBS Bandwidth  	Networking Performance
+p3.2xlarge	1	8	61	16	-	EBS-Only	1.5 Gbps	Up to 10 Gigabit
+p3.8xlarge	4	32	244	64	NVLink	EBS-Only	7 Gbps	10 Gigabit
+p3.16xlarge	8	64	488	128	NVLink	EBS-Only	14 Gbps	25 Gigabit
+p3dn.24xlarge	8	96	768	256	NVLink	2 x 900 NVMe SSD	19 Gbps	100 Gigabit
+All instances have the following specs:
+
+Intel AVX, Intel AVX2, Intel Turbo
+EBS Optimized
+Enhanced Networking†
+ 
+p3.2xlarge, p3.8xlarge, and p3.16xlarge have 2.3 GHz (base) and 2.7 GHz (turbo) Intel Xeon E5-2686 v4 processors.  
+ 
+p3dn.24xlarge has 2.5 GHz (base) and 3.1 GHz (sustained all-core turbo) Intel Xeon P-8175M processors and supports Intel AVX-512. p3dn.24xlarge instances also support Elastic Fabric Adapter (EFA) that enables High Performance Computing (HPC) applications using the Message Passing Interface (MPI) and Machine Learning (ML) applications using NVIDIA Collective Communications Library (NCCL) to scale to thousands of GPUs.
+Use Cases
+
+Machine/Deep learning, high performance computing, computational fluid dynamics, computational finance, seismic analysis, speech recognition, autonomous vehicles, drug discovery.
+Storage Optimized
+Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage. They are optimized to deliver tens of thousands of low-latency, random I/O operations per second (IOPS) to applications.
+This instance family provides Non-Volatile Memory Express (NVMe) SSD-backed instance storage optimized for low latency, very high random I/O performance, high sequential read throughput and provide high IOPS at a low cost. I3 also offers Bare Metal instances (i3.metal), powered by the Nitro System, for non-virtualized workloads, workloads that benefit from access to physical resources, or workloads that may have license restrictions.
+Features:
+
+High Frequency Intel Xeon E5-2686 v4 (Broadwell) Processors with base frequency of 2.3 GHz
+Up to 25 Gbps of network bandwidth using Elastic Network Adapter (ENA)-based Enhanced Networking
+High Random I/O performance and High Sequential Read throughput
+Support bare metal instance size for workloads that benefit from direct access to physical processor and memory
+Instance	vCPU*	Mem (GiB)	Local Storage (GB)	Networking Performance (Gbps)
+i3.large	2	15.25	1 x 475 NVMe SSD	Up to 10
+i3.xlarge	4	30.5	1 x 950 NVMe SSD	Up to 10
+i3.2xlarge	8	61	1 x 1,900 NVMe SSD	Up to 10
+i3.4xlarge	16	122	2 x 1,900 NVMe SSD	Up to 10
+i3.8xlarge	32	244	4 x 1,900 NVMe SSD	10
+i3.16xlarge	64	488	8 x 1,900 NVMe SSD	25
+i3.metal	72**	512	8 x 1,900 NVMe SSD	25
+ 
+
+All instances have the following specs:
+
+2.3 GHz Intel Xeon E5 2686 v4 Processor
+Intel AVX†, Intel AVX2†, Intel Turbo
+EBS Optimized
+Enhanced Networking†
+Use Cases
+
+NoSQL databases (e.g. Cassandra, MongoDB, Redis), in-memory databases (e.g. Aerospike), scale-out transactional databases, data warehousing, Elasticsearch, analytics workloads.
+** i3.metal provides 72 logical processors on 36 physical cores
+
+Looking for previous generation instances that were not listed here? Please see the Previous Generation Instances page.
+Each vCPU is a thread of either an Intel Xeon core or an AMD EPYC core, except for T2 and m3.medium.
+
+† AVX, AVX2, AVX-512, and Enhanced Networking are only available on instances launched with HVM AMIs.
+
+* This is the default and maximum number of vCPUs available for this instance type. You can specify a custom number of vCPUs when launching this instance type. For more details on valid vCPU counts and how to start using this feature, visit the Optimize CPUs documentation page here.
+
+Instance Features
+Amazon EC2 instances provide a number of additional features to help you deploy, manage, and scale your applications.
+Burstable Performance Instances
+Amazon EC2 allows you to choose between Fixed Performance Instances (e.g. M5, C5, and R5) and Burstable Performance Instances (e.g. T3). Burstable Performance Instances provide a baseline level of CPU performance with the ability to burst above the baseline.
+
+T Unlimited instances can sustain high CPU performance for as long as a workload needs it. For most general-purpose workloads, T Unlimited instances will provide ample performance without any additional charges. The hourly T instance price automatically covers all interim spikes in usage when the average CPU utilization of a T instance is at or less than the baseline over a 24-hour window. If the instance needs to run at higher CPU utilization for a prolonged period, it can do so at a flat additional charge of 5 cents per vCPU-hour.
+
+T instances’ baseline performance and ability to burst are governed by CPU Credits. Each T instance receives CPU Credits continuously, the rate of which depends on the instance size. T instances accrue CPU Credits when they are idle, and use CPU credits when they are active. A CPU Credit provides the performance of a full CPU core for one minute.
+
+For example, a t2.small instance receives credits continuously at a rate of 12 CPU Credits per hour. This capability provides baseline performance equivalent to 20% of a CPU core (20% x 60 mins = 12 mins). If the instance does not use the credits it receives, they are stored in its CPU Credit balance up to a maximum of 288 CPU Credits. When the t2.small instance needs to burst to more than 20% of a core, it draws from its CPU Credit balance to handle this surge automatically.
+
+With T2 Unlimited enabled, the t2.small instance can burst above the baseline even after its CPU Credit balance is drawn down to zero. For a vast majority of general purpose workloads where the average CPU utilization is at or below the baseline performance, the basic hourly price for t2.small covers all CPU bursts. If the instance happens to run at an average 25% CPU utilization (5% above baseline) over a period of 24 hours after its CPU Credit balance is drawn to zero, it will be charged an additional 6 cents (5 cents/vCPU-hour x 1 vCPU x 5% x 24 hours).
+
+Many applications such as web servers, developer environments and small databases don’t need consistently high levels of CPU, but benefit significantly from having full access to very fast CPUs when they need them. T instances are engineered specifically for these use cases. If you need consistently high CPU performance for applications such as video encoding, high volume websites or HPC applications, we recommend you use Fixed Performance Instances. T instances are designed to perform as if they have dedicated high speed Intel cores available when your application really needs CPU performance, while protecting you from the variable performance or other common side-effects you might typically see from over-subscription in other environments.
+Multiple Storage Options
+Amazon EC2 allows you to choose between multiple storage options based on your requirements. Amazon EBS is a durable, block-level storage volume that you can attach to a single, running Amazon EC2 instance. You can use Amazon EBS as a primary storage device for data that requires frequent and granular updates. For example, Amazon EBS is the recommended storage option when you run a database on Amazon EC2. Amazon EBS volumes persist independently from the running life of an Amazon EC2 instance. Once a volume is attached to an instance you can use it like any other physical hard drive. Amazon EBS provides three volume types to best meet the needs of your workloads: General Purpose (SSD), Provisioned IOPS (SSD), and Magnetic. General Purpose (SSD) is the new, SSD-backed, general purpose EBS volume type that we recommend as the default choice for customers. General Purpose (SSD) volumes are suitable for a broad range of workloads, including small to medium sized databases, development and test environments, and boot volumes. Provisioned IOPS (SSD) volumes offer storage with consistent and low-latency performance, and are designed for I/O intensive applications such as large relational or NoSQL databases. Magnetic volumes provide the lowest cost per gigabyte of all EBS volume types. Magnetic volumes are ideal for workloads where data is accessed infrequently, and applications where the lowest storage cost is important.
+
+Many Amazon EC2 instances can also include storage from disks that are physically attached to the host computer. This disk storage is referred to as instance store. Instance store provides temporary block-level storage for Amazon EC2 instances. The data on an instance store volume persists only during the life of the associated Amazon EC2 instance.
+
+In addition to block level storage via Amazon EBS or instance store, you can also use Amazon S3 for highly durable, highly available object storage. Learn more about Amazon EC2 storage options from the Amazon EC2 documentation.
+
+EBS-optimized Instances
+For an additional, low, hourly fee, customers can launch selected Amazon EC2 instances types as EBS-optimized instances. For C5, C4, M5, M4, P3, P2, G3, and D2 instances, this feature is enabled by default at no additional cost. EBS-optimized instances enable EC2 instances to fully use the IOPS provisioned on an EBS volume. EBS-optimized instances deliver dedicated throughput between Amazon EC2 and Amazon EBS, with options between 500 and 4,000 Megabits per second (Mbps) depending on the instance type used. The dedicated throughput minimizes contention between Amazon EBS I/O and other traffic from your EC2 instance, providing the best performance for your EBS volumes. EBS-optimized instances are designed for use with all EBS volumes. When attached to EBS-optimized instances, Provisioned IOPS volumes can achieve single digit millisecond latencies and are designed to deliver within 10% of the provisioned IOPS performance 99.9% of the time. We recommend using Provisioned IOPS volumes with EBS-optimized instances or instances that support cluster networking for applications with high storage I/O requirements.
+
+Cluster Networking
+Select EC2 instances support cluster networking when launched into a common cluster placement group. A cluster placement group provides low-latency networking between all instances in the cluster. The bandwidth an EC2 instance can utilize depends on the instance type and its networking performance specification. Inter instance traffic within the same region can utilize up to 5 Gbps for single-flow and up to 100 Gbps for multi-flow traffic in each direction (full duplex). Traffic to and from S3 buckets in the same region can also utilize all available instance aggregate bandwidth. When launched in a placement group, instances can utilize up to 10 Gbps for single-flow traffic and up to 100 Gbps for multi-flow traffic. Network traffic to the Internet is limited to 5 Gbps (full duplex). Cluster networking is ideal for high performance analytics systems and many science and engineering applications, especially those using the MPI library standard for parallel programming.
+
+Intel Processor Features
+intelinside_150
+Amazon EC2 instances that feature an Intel processor may provide access to the following processor features:
+
+Intel AES New Instructions (AES-NI): Intel AES-NI encryption instruction set improves upon the original Advanced Encryption Standard (AES) algorithm to provide faster data protection and greater security. All current generation EC2 instances support this processor feature.
+Intel Advanced Vector Extensions (Intel AVX, Intel AVX2 and Intel AVX-512): Intel AVX and Intel AVX2 are 256-bit and Intel AVX-512 is a 512-bit instruction set extensions designed for applications that are Floating Point (FP) intensive. Intel AVX instructions improve performance for applications like image and audio/video processing, scientific simulations, financial analytics, and 3D modeling and analysis. These features are only available on instances launched with HVM AMIs.
+Intel Turbo Boost Technology: Intel Turbo Boost Technology provides more performance when needed. The processor is able to automatically run cores faster than the base operating frequency to help you get more done faster.
+Intel Deep Learning Boost (Intel DL Boost): A new set of built-in processor technologies designed to accelerate AI deep learning use cases. The 2nd Gen Intel Xeon Scalable processors extend Intel AVX-512 with a new Vector Neural Network Instruction (VNNI/INT8) that significantly increases deep learning inference performance over previous generation Intel Xeon Scalable processors (with FP32), for image recognition/segmentation, object detection, speech recognition, language translation, recommendation systems, reinforcement learning and others. VNNI may not be compatible with all Linux distributions. Please check documentation before using. 
+Not all processor features are available in all instance types, check out the instance type matrix for more detailed information on which features are available from which instance types.
+
+Measuring Instance Performance
+Why should you measure instance performance?
+Amazon EC2 allows you to provision a variety of instances types, which provide different combinations of CPU, memory, disk, and networking. Launching new instances and running tests in parallel is easy, and we recommend measuring the performance of applications to identify appropriate instance types and validate application architecture. We also recommend rigorous load/scale testing to ensure that your applications can scale as you intend.
+Considerations for Amazon EC2 performance evaluation
+Amazon EC2 provides you with a large number of options across ten different instance types, each with one or more size options, organized into six distinct instance families optimized for different types of applications. We recommend that you assess the requirements of your applications and select the appropriate instance family as a starting point for application performance testing. You should start evaluating the performance of your applications by (a) identifying how your application needs compare to different instance families (e.g. is the application compute-bound, memory-bound, etc.?), and (b) sizing your workload to identify the appropriate instance size. There is no substitute for measuring the performance of your full application since application performance can be impacted by the underlying infrastructure or by software and architectural limitations. We recommend application-level testing, including the use of application profiling and load testing tools and services. For more information, open a support case and ask for additional network performance specifications for the specific instance types that you are interested in.

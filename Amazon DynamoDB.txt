@@ -1,0 +1,29 @@
+Hi, everyone, Morgan here. Different types of databases are built for
+different purposes. Most of us know and love relational
+databases to drive our transaction-based processes with well-structured data and
+complex queries. Relational databases allow for
+medium to high amount of throughput and require rigid schemas to be in place. But what if you need massive amounts of
+throughput, but keep that low latency? Or what if your data model was
+simple enough, and you didn't require the transactional support that
+relational databases had to offer? You might look into using
+a NoSQL database instead. Introducing Amazon DynamoDB. DynamoDB is a fully managed,
+fast, and scalable NoSQL database solution that delivers reliable
+performance at any scale. So DynamoDB is fully managed. What does that really mean? That means that when you start using
+DynamoDB, you do not have to manage any of the underlying infrastructure
+running that database. When you need to start using DynamoDB,
+you simply create a table, define your throughput needs, and you
+can start populating it with your data. To compare this with Amazon RDS,
+with RDS when you need to use it, you define how much capacity you
+need in terms of memory and CPU. So you're defining the underlying hardware
+that we're running your database on. With Dynamo, you simply just tell us
+how much you need talk to that table by provisioning your throughput needs. With Amazon DynamoDB, you can start small,
+specify the throughput you need, and easily scale your capacity
+requirements in seconds, as needed. It automatically partitions
+data over multiple servers to meet your requested capacity. As your data grows, AWS handles
+the management of scaling your database. There is no limit on table size, which
+means you can store any amount of data. DynamoDB synchronously
+replicates your data across three facilities in an AWS Region to
+ensure redundancy and availability. So you're protected from any chaos caused
+by our lizard friends, or any other events that would temporarily disrupt
+connections to an Availability Zone. To get a better look at this, let's look
+at our corporate directory application and how it can use DynamoDB.

@@ -1,0 +1,105 @@
+AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
+
+With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.
+
+
+Getting Started with AWS Lambda (3:00)
+Benefits
+NO SERVERS TO MANAGE
+AWS Lambda automatically runs your code without requiring you to provision or manage servers. Just write the code and upload it to Lambda.
+
+CONTINUOUS SCALING
+AWS Lambda automatically scales your application by running code in response to each trigger. Your code runs in parallel and processes each trigger individually, scaling precisely with the size of the workload.
+
+SUBSECOND METERING
+With AWS Lambda, you are charged for every 100ms your code executes and the number of times your code is triggered. You pay only for the compute time you consume. 
+
+CONSISTENT PERFORMANCE
+With AWS Lambda, you can optimize your code execution time by choosing the right memory size for your function. You can also enable Provisioned Concurrency to keep your functions initialized and hyper-ready to respond within double digit milliseconds.
+How it works
+How AWS Lambda Works
+Use cases
+What can you build with AWS Lambda? Learn more about the use cases below:
+Data processing
+You can use AWS Lambda to execute code in response to triggers such as changes in data, shifts in system state, or actions by users. Lambda can be directly triggered by AWS services such as S3, DynamoDB, Kinesis, SNS, and CloudWatch, or it can be orchestrated into workflows by AWS Step Functions. This allows you to build a variety of real-time serverless data processing systems.
+REAL-TIME FILE PROCESSING
+You can use Amazon S3 to trigger AWS Lambda to process data immediately after an upload. For example, you can use Lambda to thumbnail images, transcode videos, index files, process logs, validate content, and aggregate and filter data in real-time.
+Reference Architecture: Sample Code
+AWS Lambda File Processing
+The_Seattle_Times_logo2
+The Seattle Times uses AWS Lambda to resize images for viewing on different devices such as desktop computers, tablets, and smartphones. Read the case study »
+REAL-TIME STREAM PROCESSING
+You can use AWS Lambda and Amazon Kinesis to process real-time streaming data for application activity tracking, transaction order processing, click stream analysis, data cleansing, metrics generation, log filtering, indexing, social media analysis, and IoT device data telemetry and metering.
+Reference Architecture: Sample code
+AWS Lambda Stream Processing
+localytics-logo2
+Localytics processes billions of data points in real-time, and uses Lambda to process historical and live data stored in S3 or streamed from Kinesis. Read the case study »
+EXTRACT, TRANSFORM, LOAD
+You can use AWS Lambda to perform data validation, filtering, sorting, or other transformations for every data change in a DynamoDB table and load the transformed data to another data store.
+AWS Lambda ETL
+zillow-Logo2
+Zillow uses Lambda and Kinesis to track a subset of mobile metrics in realtime. With Kinesis and Lambda, we were able to develop and deploy a cost effective solution in two weeks.
+Backends
+You can build serverless backends using AWS Lambda to handle web, mobile, Internet of Things (IoT), and 3rd party API requests. Take advantage of Lambda’s consistent performance controls, such as multiple memory configurations and Provisioned Concurrency, for building latency-sensitive applications at any scale.
+WEB APPLICATIONS
+By combining AWS Lambda with other AWS services, developers can build powerful web applications that automatically scale up and down and run in a highly available configuration across multiple data centers – with zero administrative effort required for scalability, back-ups or multi-data center redundancy.
+Reference Architecture: Sample code
+AWS Lambda Web Backend
+IOT BACKENDS
+You can build serverless backends using AWS Lambda to handle web, mobile, Internet of Things (IoT), and 3rd party API requests.
+Reference Architecture: Sample code
+AWS Lambda IoT Backend
+MOBILE BACKENDS
+AWS Lambda makes it easy to create rich, personalized app experiences. You can build backends using AWS Lambda and Amazon API Gateway to authenticate and process API requests. Use AWS Amplify to easily integrate your backend with your iOS, Android, Web, and React Native frontends.
+Reference Architecture: Sample code
+AWS Lambda Mobile Backend
+Bustle_logo2
+Bustle runs a serverless backend for its Bustle iOS app and websites using AWS Lambda and Amazon API Gateway. Serverless architectures allow Bustle to never have to deal with infrastructure management, so every engineer can focus on building out new features and innovating. Read the case study »
+Case studies
+Coca Cola
+The Coca-Cola Company, an American multinational beverage corporation, used AWS Lambda and AWS Step Functions to build a cost-effective serverless solution.
+Read the blog »
+
+iRobot
+iRobot, a leading global consumer robot company, is building the next generation of connected devices for the smart home using a serverless architecture.
+
+Read more »
+
+Benchling
+Benchling, a life science software company, created a technique that researchers use to modify parts of a genome with extreme precision using serverless architecture.
+
+Read more »
+Thomson Reuters-logo2
+Thomson Reuters uses AWS Lambda to process up to 4,000 events per second for its usage analytics service, and it took five months to deploy into production.
+Read more »
+
+See more case studies »
+Get started with AWS Lambda
+Next-Steps-Icon_Create-account
+Sign up for an AWS account
+
+Instantly get access to the AWS Free Tier.
+Next-Steps-Icon_Tutorial
+Learn with step-by-step tutorials
+
+Explore and learn with simple tutorials.
+Next-Steps-Icon_Login
+Start building with AWS Lambda
+
+Visit the AWS Management Console.
+
+Learn more about AWS Lambda
+
+Visit the features page
+Ready to build?
+Get started with AWS Lambda
+Have more questions?
+Contact us
+AMAZON ELASTICACHE FOR REDIS
+Boost your database performance with microsecond latency from Amazon ElastiCache
+SiteMerch-RDS+ElastiCache_2up
+AWS FREE TIER
+Gain free, hands-on experience with AWS for 12 months
+Site-Merch_Free-Tier-2up
+AWS SUMMIT ONLINE 2020 | 13 MAY | FREE ONLINE EVENT
+Accelerate your cloud journey and develop the skills to design, deploy, and operate on the cloud
